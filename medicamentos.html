@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Medicamentos</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <h1>Medical Data Gestión</h1>
+
+    <p>Registro de medicamentos</p>
+
+</header>
+
+<div class="form-container">
+
+    <h2>Registrar Medicamento</h2>
+
+    <form>
+
+        <label>Nombre del medicamento</label>
+        <input type="text" id="nombreMedicamento">
+
+        <label>Cantidad disponible</label>
+        <input type="number" id="cantidad">
+
+        <label>Fecha de vencimiento</label>
+        <input type="date" id="fecha">
+
+        <label>Descripción</label>
+
+        <textarea
+            id="descripcion"
+            rows="4"
+            placeholder="Ingrese una descripción del medicamento">
+        </textarea>
+
+        <button
+            type="button"
+            onclick="guardarMedicamento()">
+
+            Guardar medicamento
+
+        </button>
+
+    </form>
+
+    <a href="menu.html" class="volver">
+
+        ← Volver al menú
+
+    </a>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
